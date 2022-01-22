@@ -25,7 +25,8 @@ Object.entries(views).forEach(([componentPath, definition]) => {
 routes.push(
   ...[
     {
-      path: "/:catchAll(.*)*",
+      name: "not-found",
+      path: "/:catchAll(.*)",
       redirect: { name: "home" },
     },
   ],
