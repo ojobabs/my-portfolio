@@ -1,35 +1,38 @@
 <script setup lang="ts">
-import { storeToRefs } from "pinia";
 import { useThemeStore } from "./store/themeStore";
+import AppNavbar from "@/components/Navbar.vue";
+import AppContainer from "@/components/Container.vue";
+
 const themeStore = useThemeStore();
-const { darkMode } = storeToRefs(themeStore);
 </script>
 
 <template>
   <div
-    class="transition-colors duration-250 ease-in-out"
-    :class="{ dark: darkMode }"
+    class="min-h-screen flex flex-col theme-main transition-colors duration-250 ease-in-out"
   >
-    <router-view></router-view>
-    <app-accept-button
-      @click.prevent="themeStore.toggleDarkMode"
-      text="Change theme"
-    />
+    <app-navbar />
+    <div class="flex flex-col lg:max-w-7xl lg:m-auto px-4 pb-4 pt-20 lg:pt-12">
+      <app-container>
+        <router-view v-slot="{ Component }">
+          <transition
+            enter-active-class="animate__animated animate__fadeInRight animate__faster"
+            leave-active-class="animate__animated animate__fadeOutLeft animate__faster"
+            mode="out-in"
+          >
+            <component :is="Component" />
+          </transition>
+        </router-view>
+      </app-container>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
+<style>
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 #app {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(249 250 251); /* bg-gray-50 */
-  color: rgb(55 65 81); /* text-gray-700 */
-}
-.dark {
-  background-color: rgb(17 24 39); /* bg-gray-900 */
-  color: rgb(209 213 219); /* text-gray-300 */
 }
 </style>

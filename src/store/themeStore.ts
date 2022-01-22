@@ -7,6 +7,9 @@ export const useThemeStore = defineStore("themeStore", {
   actions: {
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
+      this.darkMode
+        ? document.body.classList.add("dark")
+        : document.body.classList.remove("dark");
     },
   },
 });

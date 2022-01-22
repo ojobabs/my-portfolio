@@ -1,0 +1,44 @@
+{
+  "language-menu": {
+    "english": "Inglês",
+    "portuguese": "Português"
+  },
+  "navbar": {
+    "change-dark-mode": "Alterar para Modo Noturno",
+    "change-light-mode": "Alterar para Modo Diurno",
+    "change-language": "Mudar Idioma",
+    "home": "Home",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "experiences": "Experiências",
+    "education": "Formações",
+    "contact-me": "Fale Comigo"
+  },
+  "home": {
+    "title": "Olá",
+    "subtitle": "Meu nome é",
+    "first": "Eu sou um desenvolvedor full stack de web e software, além de um estudante ávido. JS e TS são minhas principais linguagens de programação, quais eu uso na maioria dos meus projetos e trabalhos.",
+    "second": "Atualmente NodeJS tem sido meu ambiente de desenvolvimento preferido, onde eu faço aplicações Web usando Vue, soluções backend usando MongoDB e Firebase e até projetos pessoais como bots de Discord.",
+    "third": "Fora programação, eu gosto de ler, jogar e ter uma vida social ativa."
+  },
+  "skills": {
+    "subtitle": "Essas são as linguagens de programação, ferramentas e habilidades que eu aprendi durante minha carreira como desenvolvedor.",
+    "team-work": "Trabalho em Equipe",
+    "communication": "Comunicação",
+    "time-management": "Gerenciamento de Tempo"
+  },
+  "projects": {
+    "title": "Todos os projetos têm uma licensa MIT e estão diponíveis no meu Github."
+  },
+  "contact-me": {
+    "title": "Obrigado por visitar meu portfólio.",
+    "subtitle": "Me manda uma mensagem bacana!",
+    "full-name": "Nome Completo",
+    "message": "Mensagem",
+    "clear": "Limpar",
+    "send": "Enviar",
+    "sending": "Enviando mensagem...",
+    "sending-error": "Erro, não foi possível enviar a mensagem.",
+    "sending-success": "Messa enviada com sucesso."
+  }
+}
