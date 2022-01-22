@@ -1,21 +1,35 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import { storeToRefs } from "pinia";
+import { useThemeStore } from "./store/themeStore";
+const themeStore = useThemeStore();
+const { darkMode } = storeToRefs(themeStore);
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div
+    class="transition-colors duration-250 ease-in-out"
+    :class="{ dark: darkMode }"
+  >
+    <router-view></router-view>
+    <app-accept-button
+      @click.prevent="themeStore.toggleDarkMode"
+      text="Change theme"
+    />
+  </div>
 </template>
 
-<style>
+<style lang="scss">
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: rgb(249 250 251); /* bg-gray-50 */
+  color: rgb(55 65 81); /* text-gray-700 */
+}
+.dark {
+  background-color: rgb(17 24 39); /* bg-gray-900 */
+  color: rgb(209 213 219); /* text-gray-300 */
 }
 </style>
