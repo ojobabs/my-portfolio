@@ -15,6 +15,7 @@ import {
   faHandshake,
   faComments,
   faStopwatch,
+  faExternalLinkSquareAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -48,7 +49,8 @@ export default {
       faFileCode,
       faHandshake,
       faComments,
-      faStopwatch
+      faStopwatch,
+      faExternalLinkSquareAlt
     );
     library.add(
       faGithub,

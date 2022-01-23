@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "@vee-validate/i18n": "^4.5.7",
     "@vee-validate/rules": "^4.5.7",
     "@vueuse/core": "^7.5.3",
     "animate.css": "^4.1.1",

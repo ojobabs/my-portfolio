@@ -91,7 +91,7 @@ onClickOutside(mobileMenuButton, (event) => (showMobileMenu.value = false));
         </div>
       </div>
       <!-- Nav -->
-      <nav>
+      <nav class="text-xl">
         <router-link
           v-for="route in navRoutes"
           :key="route.route"
@@ -107,8 +107,8 @@ onClickOutside(mobileMenuButton, (event) => (showMobileMenu.value = false));
   </div>
   <!-- Desktop Navbar -->
   <transition
-    enter-active-class="animate__animated animate__flipInX animate__faster animate__delay-1s"
-    leave-active-class="animate__animated animate__flipOutX animate__faster animate__delay-1s"
+    enter-active-class="animate__animated animate__fadeInDown animate__faster animate__delay-1s"
+    leave-active-class="animate__animated animate__fadeOutUp animate__faster animate__delay-1s"
     appear
   >
     <div class="hidden lg:block">
@@ -131,7 +131,7 @@ onClickOutside(mobileMenuButton, (event) => (showMobileMenu.value = false));
             :key="route.route"
             :to="{ name: route.route }"
             :title="route.label"
-            class="rounded p-2 hover:bg-gray-900 hover:text-gray-100 transition-colors duration-250"
+            class="rounded p-2 theme-main-hover transition-colors duration-250"
           >
             <font-awesome-icon
               :icon="['fas', route.icon]"
