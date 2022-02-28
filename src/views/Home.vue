@@ -18,16 +18,7 @@
       appear
     >
       <div class="flex space-x-4 justify-end">
-        <img
-          src="../assets/profile.jpg"
-          alt=""
-          class="w-1/2 lg:w-40 rounded-full"
-        />
-        <img
-          src="../assets/klaus.jpg"
-          alt=""
-          class="w-1/2 lg:w-40 rounded-full"
-        />
+        <img align="right" src="https://github-readme-stats.vercel.app/api?username=ojobabs&count_private=true&show_icons=true">
       </div>
     </transition>
   </div>
