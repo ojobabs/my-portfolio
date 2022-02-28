@@ -18,7 +18,7 @@
       appear
     >
       <div class="flex space-x-4 justify-end">
-        <img align="right" src="https://github-readme-stats.vercel.app/api?username=ojobabs&count_private=true&show_icons=true">
+        <img align="center" src="https://github-readme-stats.vercel.app/api?username=ojobabs&count_private=true&show_icons=true">
       </div>
     </transition>
   </div>
