@@ -11,7 +11,7 @@
         class="text-green-500"
         >CC BY-NC-SA 4.0</a
       >
-      2022 © Josh Israel</span
+      2022 © Babatunde Ojo</span
     >
   </footer>
 </template>
