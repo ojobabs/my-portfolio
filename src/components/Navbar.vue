@@ -71,18 +71,18 @@ onClickOutside(mobileMenuButton, (event) => (showMobileMenu.value = false));
     >
       <!-- Logo -->
       <div class="flex p-4 justify-between text-2xl font-extrabold">
-        <span class="block text-center">Josh Israel</span>
+        <span class="block text-center">Babatunde Ojo</span>
         <!-- Social Buttons -->
         <div class="flex space-x-4">
           <a
-            href="https://github.com/josh-israel"
+            href="https://github.com/ojobabs"
             target="_blank"
             title="Github"
           >
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
           <a
-            href="https://linkedin.com/in/joshh-israel"
+            href="https://linkedin.com/in/ojobabs"
             target="_blank"
             title="Linkedin"
           >
@@ -143,7 +143,7 @@ onClickOutside(mobileMenuButton, (event) => (showMobileMenu.value = false));
         <div class="flex space-x-4">
           <!-- Social Buttons -->
           <a
-            href="https://github.com/josh-israel"
+            href="https://github.com/ojobabs"
             target="_blank"
             title="Github"
           >
